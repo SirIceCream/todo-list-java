@@ -1,0 +1,12 @@
+The UI is already in a Docker image in Dockerhub
+
+Docker image: ecmentor/exercises-todos-ui
+
+-- Run the container for the first time
+docker run -d --network=host -p 80:80 --name todos-ui ecmentor/exercises-todos-ui
+
+-- Start the container after having run it once
+docker start todos-ui
+
+-- Use the application in the browser
+URL: http://localhost
